@@ -1,17 +1,82 @@
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+# E4commerce
 
-# Framework Desenho de Software Grupo 4
-
-
-## Sobre o projeto
-
-<p align="justify">O projeto tem como objetivo a criação de um framework para ser utilizado em projetos que envolvem e-commerce, de forma a oferecer diversas vantagens para quem utilizá-lo.
+O e4commerce tem como objetivo fornecer uma ferramenta que facilite no desenvolvimento de um commerce. Voltada ao público brasileiro procurar fornecer formas de pagamento de acordo com as normas nacionais.
 
 ## Instalação
 
-## Licença
-[MIT](https://opensource.org/licenses/MIT)
+Adicione a linha abaixo no seu GemFile:
 
-<p align="center">Grupo 4 - Desenho de Software 2017/1<br /><br />
-<a href="https://fga.unb.br" target="_blank"><img width="200"src="https://4.bp.blogspot.com/-0aa6fAFnSnA/VzICtBQgciI/AAAAAAAARn4/SxVsQPFNeE0fxkCPVgMWbhd5qIEAYCMbwCLcB/s1600/unb-gama.png"></a>
-</p>
+```ruby
+gem 'e4commerce'
+```
+
+Então execute:
+
+    $ bundle
+
+Ou instale isto por meio do seguinte comando:
+
+    $ gem install e4commerce
+
+## Utilização
+
+Em desenvolvimento
+
+## Desenvolvimento
+
+Depois de checar o repositório, execute `bin/setup` para instalar suas dependências. Você também pode executar bin/console` para experimentar.
+
+Para instalar esta gem em sua máquina local, execute run `bundle exec rake install`. Para lançar uma nova versão, atualize o número da versão no aruivo `version.rb`, e então executar `bundle exec rake release`, o qual cria uma tag git para a versão e cria um push nos comitts e tags. Por fim, dê um push no arquivo .gem para [rubygems.org](https://rubygems.org).
+
+## Contribuição
+
+
+Reportar bugs e pull requestes são bem-vindos em nosso repositório oficial: GitHub at https://github.com/miguelpimentel/e4commerce.
+
+
+## Licensa
+
+Esta gem está disponível como open source de acordo com os termos da [licensa MIT](http://opensource.org/licenses/MIT).
+
+
+
+# E4commerce
+
+The e4commerce aims to create a simple tool for ecommerce development. This gem is made for brazilians developers according with brazilian financial rules.
+
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'e4commerce'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install e4commerce
+
+## Usage
+
+Under Development
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/miguelpimentel/e4commerce.
+
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
