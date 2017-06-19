@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["miguelpimentel2013@gmail.com"]
 
   spec.summary       = %q{"Provide e-commerce structure and different payment methods"}
-  spec.description   = %q{"Provide payment such as boleto bancário and PagSeguro"}
   spec.homepage      = "https://github.com/miguelpimentel/e4commerce"
   spec.license       = "MIT"
 
