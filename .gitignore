@@ -45,6 +45,7 @@ Temporary Items
 
 ### Rails ###
 *.rbc
+*.gem
 capybara-*.html
 .rspec
 /log
