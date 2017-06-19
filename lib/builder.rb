@@ -1,4 +1,5 @@
 require "e4commerce/version"
+require "e4commerce/builder"
 
 module E4commerce
 
@@ -7,5 +8,5 @@ module E4commerce
 	def test
 		print("Nois")
 	end
-	
+
 end
