@@ -12,23 +12,31 @@ task ({'file ' => ['pagseguro']}) do
 
 end 
 
-# file :pagseguro, [:s] do |file, args|
-
-# 	puts args[:s]
-# 	File.open(args[:s], "w+") { |file| file.write("boo!") }
-# end
-
-
 task :thing, [:foo] do |task, args|
   puts args[:foo]
 end
 
-#use rake thing [foo]
+file :pagseguro, [:token] => :environment do |file, args|
 
-file :pagseguro, [:s] do |file, args|
+	new_line = "\n"
+	content = ""
+	tab = "   "
 
+	content = content + "PagSeguro.configure do |config|" + new_line
+	
+	content = content + tab + "config.token = " + (args[:token]) + new_line
+	content = content + tab + "config.email = " + (args[:token]) + new_line
+	content = content + tab + "config.environment = #production" + new_line
+	content = content + tab + "config.email = #UTF-8" + new_line
+	
+	content = content + "end" + new_line
 
- 	aux  =  args[:s] + ".rb"
- 	puts aux
- 	File.open(aux, "w+") { |file| file.write(args[:s]) }
+ 	aux  =  "lib/tasks/pagseguro.rb"
+
+ 	puts "CREATED " + aux + new_line
+
+ 	File.open(aux, "w+") { |file| file.write(content) }
 end
+
+
+
