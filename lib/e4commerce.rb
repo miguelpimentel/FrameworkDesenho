@@ -7,5 +7,7 @@ module E4commerce
 	def test
 		print("Nois")
 	end
+
+end
 	
 end
