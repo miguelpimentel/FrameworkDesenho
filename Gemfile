@@ -6,5 +6,5 @@ gemspec
 gem 'boletosimples'
 gem 'dalli'
 gem "pagseguro-oficial"
-
+gem "fileutils"
 

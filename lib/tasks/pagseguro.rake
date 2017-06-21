@@ -1,3 +1,5 @@
+require 'fileutils'
+
 task ('one') do 
 	puts "one"
 end
@@ -38,5 +40,20 @@ file :pagseguro, [:token] => :environment do |file, args|
  	File.open(aux, "w+") { |file| file.write(content) }
 end
 
+file :pagsegurocontrollers => :environment do |file, args|
 
+	new_line = "\n"
+	content = ""
+	tab = "   "
 
+	FileUtils.mkdir_p("lib/pagseguro")
+	FileUtils.cp("lib/e4commerce/ps_checkout_template.rb", "lib/pagseguro/checkout_controller.rb")
+	FileUtils.cp("lib/e4commerce/notifications_controller.rb", "lib/pagseguro/notifications_controller.rb")
+
+ 	aux  =  "./checkout_controller.rb"
+
+ 	puts "CREATED FOLDER pagseguro"
+ 	puts "CREATED Notification and checkout controllers"
+
+ 	#File.open(aux, "w+") { |file| file.write(content) }
+end
