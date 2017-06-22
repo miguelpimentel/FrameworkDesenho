@@ -3,8 +3,9 @@ module E4commerce
 	require "abstraction"
 	require "active_record"
 
+
 	# class E4CProduct < ActiveRecord::Base -> Rails project, need database
-	class E4CProduct
+	class E4CProduct < ActiveRecord::Base
 		abstract
 
 		attr_accessor :title
