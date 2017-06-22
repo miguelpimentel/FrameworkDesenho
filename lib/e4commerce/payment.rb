@@ -4,7 +4,7 @@ require "abstraction"
 require "active_record"
 
 	#class E4CPayment < ActiveRecord::Base ~> Rails project, need database
-	class E4CPayment
+	class E4CPayment < ActiveRecord::Base
 		abstract
 
 		attr_accessor :product_list
