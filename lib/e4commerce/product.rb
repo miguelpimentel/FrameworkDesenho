@@ -6,6 +6,7 @@ module E4commerce
 
 	# class E4CProduct < ActiveRecord::Base -> Rails project, need database
 	class E4CProduct < ActiveRecord::Base
+
 		abstract
 
 		attr_accessor :title

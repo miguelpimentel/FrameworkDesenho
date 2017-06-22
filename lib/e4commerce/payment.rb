@@ -1,10 +1,12 @@
 module E4commerce
 
+a = E4commerce::4CPayment.new
+
 require "abstraction"
 require "active_record"
 
 	#class E4CPayment < ActiveRecord::Base ~> Rails project, need database
-	class E4CPayment < ActiveRecord::Base
+	class E4CPayment < ActiveRecord::Base E4commerce::4CPayment
 		abstract
 
 		attr_accessor :product_list
