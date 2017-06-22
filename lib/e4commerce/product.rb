@@ -1,20 +1,23 @@
-require "abstraction"
-require "active_record"
+module E4commerce
 
-# class E4CProduct < ActiveRecord::Base -> Rails project, need database
-class E4CProduct
-	abstract
+	require "abstraction"
+	require "active_record"
 
-	attr_accessor :title
-	attr_accessor :serial_number
-	attr_accessor :brand
-	attr_accessor :unit_price
+	# class E4CProduct < ActiveRecord::Base -> Rails project, need database
+	class E4CProduct
+		abstract
 
-	def initialize(title, serial_number, brand, unit_price)
-		@title = title
-		@serial_number = serial_number
-		@brand = brand
-		@unit_price = unit_price
+		attr_accessor :title
+		attr_accessor :serial_number
+		attr_accessor :brand
+		attr_accessor :unit_price
+
+		def initialize(title, serial_number, brand, unit_price)
+			@title = title
+			@serial_number = serial_number
+			@brand = brand
+			@unit_price = unit_price
+		end
 	end
 
 end
