@@ -24,6 +24,8 @@ require "pagseguro"
               }
             end
 
+            calculate_total(self.product_list)
+
             response = payment.register
 
             if response.errors.any?
@@ -31,6 +33,15 @@ require "pagseguro"
             else
               redirect_to response.url
             end
+        end
+
+        def calculate_total(products)
+            total = 0
+            self.product_list.each do |product|
+                total += product.unit_price
+            end
+
+            total
         end
     
         def self.create_notification(notification_code_param)
