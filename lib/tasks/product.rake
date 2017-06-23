@@ -17,6 +17,7 @@ namespace :product do
     content = ""
     tab = "   "
 
+
     desc "Generate a model that heritances from product"
     #usage example: rake product:generate_model[Nike,Produto,numero,cor]
     task :generate_model do |task, args|
@@ -36,6 +37,8 @@ namespace :product do
         end
 
         content += "end"
+
+        puts "CREATE lib/e4commerce/#{args.extras[0]}.rb"
 
         write_content(file,content)
 
