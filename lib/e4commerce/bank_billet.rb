@@ -4,24 +4,6 @@ module E4commerce
     require "client"
     require "brcobranca"
 	class BankBillet < E4CPayment
-        attr_accessor :bank
-
-        def initialize(bank)
-        
-            @bank = [ :itau => Brcobranca::Boleto::BancoItau.new,
-                      :bb => Brcobranca::Boleto:BancoBrasil.new
-                      :hsbc => Brcobranca::Boleto::Hsbc.new,
-                      :santander => Brcobranca::Boleto::Santander.new,
-                      :bradesco => Brcobranca::Boleto::Bradesco.new,
-                      :caixa => Brcobranca::Boleto::Caixa.new
-                      :sicredi => Brcobranca::Boleto::Sicredi.new,
-                      :sicoob => Brcobranca::Boleto::Sicoob.new,
-                      :banestes => Brcobranca::Boleto::Banestes.new
-                      
-                      
-                    ]
-        
-        end
 
 		def calculate_total(product_list)
             # Determine total price sum of products in list
