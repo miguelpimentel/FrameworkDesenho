@@ -3,21 +3,19 @@ module E4commerce
     require "abstraction"
 
 	class BankBillet < E4CPayment
-        absrtact
-		attr_accessor :product_list
-		attr_accessor :total
+    
 
-		def calculate_total
+		def calculate_total(product_list)
             # Determine total price sum of products in list
 
-            @product_list.each do |product|
-                @total += product.unit_price
+            self.product_list.each do |product|
+                self.total += product.unit_price
             end 
 
-            return @total
+            return self.total
 		end
 
-		def create_payment
+		def create_payment(total)
             # Generates and returns bank billet given total price
             current_time = DateTime.now
 
@@ -25,7 +23,7 @@ module E4commerce
                 :documento_cedente => "12345678912",
                 :sacado => "Maria Maria",
                 :sacado_documento => "12345678900",
-                :valor => @total,
+                :valor => total,
                 :agencia => "4042",
                 :conta_corrente => "61900",
                 :convenio => "1238798",
@@ -43,7 +41,7 @@ module E4commerce
 
 		def add_product(product)
 			# Adds a product or an array of products to the products list
-			@product_list << product
+			self.product_list << product
 		end
 	end
 
