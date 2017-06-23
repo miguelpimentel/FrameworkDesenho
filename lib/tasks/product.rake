@@ -17,7 +17,6 @@ namespace :product do
     content = ""
     tab = "   "
 
-
     desc "Generate a model that heritances from product"
     #usage example: rake product:generate_model[Nike,Produto,numero,cor]
     task :generate_model do |task, args|
@@ -71,5 +70,4 @@ task :E4Cinitialize do
 	    end
 	  end
 	end
-
 end
