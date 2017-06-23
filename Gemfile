@@ -8,3 +8,5 @@ gem 'dalli'
 gem "pagseguro-oficial"
 gem 'abstraction'
 gem "activerecord"
+
+gem "brcobranca", :github => "kivanio/brcobranca"

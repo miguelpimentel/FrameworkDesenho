@@ -22,4 +22,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pagseguro-oficial", "~> 2.6.0"
+  spec.add_development_dependency "abstraction", "~> 0.0.4"
+  spec.add_development_dependency "activerecord", "~> 5.1.1"
+
+
 end
