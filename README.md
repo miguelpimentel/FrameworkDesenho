@@ -20,7 +20,7 @@ Ou instale isto por meio do seguinte comando:
 
 ## Utilização
 
-Em desenvolvimento
+Para informações de uso, acesse: [Manual de Uso](https://github.com/miguelpimentel/e4commerce/wiki/Manual-de-Uso)
 
 ## Desenvolvimento
 
@@ -63,7 +63,7 @@ Or install it yourself as:
 
 ## Usage
 
-Under Development
+For more info, acess: [e4commerce documentation](https://github.com/miguelpimentel/e4commerce/wiki/Manual-de-Uso)
 
 ## Development
 
