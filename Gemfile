@@ -9,4 +9,4 @@ gem "pagseguro-oficial"
 gem 'abstraction'
 gem "activerecord"
 
-gem "brcobranca", :github => "kivanio/brcobranca"
+#gem "brcobranca", :github => "kivanio/brcobranca"
