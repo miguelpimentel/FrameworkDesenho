@@ -1,8 +1,10 @@
 module E4commerce
+    
     require "date"
     require "abstraction"
     require "client"
     require "brcobranca"
+
 	class BankBillet < E4CPayment
 
 		def calculate_total(product_list)

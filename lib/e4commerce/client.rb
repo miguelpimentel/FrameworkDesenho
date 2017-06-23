@@ -1,4 +1,5 @@
 module E4commerce
+	
 	class Client
 
 		attr_accessor :cedente

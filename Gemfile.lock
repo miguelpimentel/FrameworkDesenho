@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    e4commerce (0.6.0)
+    e4commerce (0.6.1)
 
 GEM
   remote: https://rubygems.org/

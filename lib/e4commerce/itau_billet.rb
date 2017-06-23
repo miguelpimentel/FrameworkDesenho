@@ -1,4 +1,5 @@
 class ItauBillet < BankBillet
+      
 	def create_payment(client)
 	 	#Generates and returns bank billet given total price
             current_time = DateTime.now
