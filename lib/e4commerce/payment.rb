@@ -9,7 +9,7 @@ require "active_record"
 		attr_accessor :product_list
 		attr_accessor :total
 
-		def calculate_total(products)
+		def calculate_total
 			raise NotImplementedError, "Child must implement method"
 		end
 
