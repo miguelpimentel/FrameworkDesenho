@@ -1,9 +1,9 @@
-class ItauBillet < BankBillet
+class SantanderBillet < BankBillet
 	def create_payment(client)
 	 	#Generates and returns bank billet given total price
             current_time = DateTime.now
 
-            @boleto = Brcobranca::Boleto::BancoItau.new :cedente => client.cedente,
+            @boleto = Brcobranca::Boleto::Santander.new :cedente => client.cedente,
                   :documento_cedente => client.documento_cedente,
                   :sacado => client.sacado,
                   :sacado_documento => client.sacado_documento,
@@ -19,6 +19,6 @@ class ItauBillet < BankBillet
                   :instrucao3 => client.instrucao3,
                   :sacado_endereco => client.sacado_endereco
 
-            send_data @boleto.to_pdf, :filename => "boletoItau.pdf"
+            send_data @boleto.to_pdf, :filename => "boletoSantander.pdf"
       end
 end
