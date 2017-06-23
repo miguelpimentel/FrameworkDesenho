@@ -1,6 +1,6 @@
 class CheckoutController < E4CPayment
 
-  def create
+  def abandoned_transactions
     report = PagSeguro::Transaction.find_abandoned
 
     while report.next_page?
@@ -21,6 +21,9 @@ class CheckoutController < E4CPayment
         puts
       end
     end
+  end
+
+  def  transaction_history
   end
 
 
