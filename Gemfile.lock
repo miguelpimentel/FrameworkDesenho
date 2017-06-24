@@ -83,7 +83,7 @@ DEPENDENCIES
   abstraction
   activerecord
   boletosimples
-  bundler (~> 1.14)
+  bundler
   dalli
   e4commerce!
   pagseguro-oficial
