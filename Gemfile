@@ -10,3 +10,4 @@ gem 'abstraction'
 gem "activerecord"
 gem 'rspec', '~> 3.6'
 gem 'simplecov', :require => false
+

@@ -37,6 +37,8 @@ namespace :product do
 
         content += "end"
 
+        puts "CREATE lib/e4commerce/#{args.extras[0]}.rb"
+
         write_content(file,content)
 
         puts "CREATED " + file + new_line
@@ -70,5 +72,4 @@ task :E4Cinitialize do
 	    end
 	  end
 	end
-
 end

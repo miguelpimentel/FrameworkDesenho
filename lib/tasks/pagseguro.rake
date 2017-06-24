@@ -1,22 +1,5 @@
 require 'fileutils'
 
-task ('one') do 
-	puts "one"
-end
-
-task({'two' => ['one']}) do
-  puts 'two'
-end
-
-
-task ({'file ' => ['pagseguro']}) do 
-
-
-end 
-
-task :thing, [:foo] do |task, args|
-  puts args[:foo]
-end
 
 file :pagseguro, [:token] => :environment do |file, args|
 
@@ -54,6 +37,5 @@ file :pagsegurocontrollers => :environment do |file, args|
 
  	puts "CREATED FOLDER pagseguro"
  	puts "CREATED Notification and checkout controllers"
-
- 	#File.open(aux, "w+") { |file| file.write(content) }
+ 	
 end
