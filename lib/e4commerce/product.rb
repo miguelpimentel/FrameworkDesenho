@@ -19,6 +19,14 @@ module E4commerce
 			@unit_price = unit_price
 		end
 
+    def search
+      raise 'Abstract method'
+    end
+
+    def sale
+      raise 'Abstract method'
+    end
+
 	end
 
 end
