@@ -1,3 +1,8 @@
+
+<p align="left">
+    <img src="https://travis-ci.org/miguelpimentel/e4commerce.svg?branch=devel"></a>
+</p>
+
 # E4commerce
 
 O e4commerce tem como objetivo fornecer uma ferramenta que facilite no desenvolvimento de um commerce. Voltada ao público brasileiro procurar fornecer formas de pagamento de acordo com as normas nacionais.

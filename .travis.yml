@@ -1,0 +1,17 @@
+sudo: true
+language: ruby
+
+branches:
+  only:
+    - master
+    - devel
+    - travis
+
+rvm:
+  - "2.3.1"
+
+before_script:
+  - gem install bundler
+  - gem install rspec simplecov
+  - bundle install
+

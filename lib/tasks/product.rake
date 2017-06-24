@@ -18,7 +18,7 @@ namespace :product do
     tab = "   "
 
     desc "Generate a model that heritances from product"
-    #usage example: rake product:generate_model[Nike,Produto,numero,cor]
+    #usage example: rake product:generate_model[Shoes,E4CProduct,color,size,imported_from]
     task :generate_model do |task, args|
 
         file  =  "lib/e4commerce/#{args.extras[0]}.rb"
@@ -30,19 +30,23 @@ namespace :product do
 
         content = "class #{args.extras[0]} < #{args.extras[1]}" + new_line
 
-        #Include validations to each element but first
+        #Include validations to each element but first and second argument
         args.extras.drop(2).each do |params|
             content += tab + "validates :#{params}, presence: true" + new_line
         end
 
         content += "end"
 
+        puts "CREATE lib/e4commerce/#{args.extras[0]}.rb"
+
         write_content(file,content)
+
+        puts "CREATED " + file + new_line
 
     end
 
     def write_content(file,content)
-        #Writes the file
+        #Writes the file for model
         File.open(file, "w+") { |file| file.write(content) }
     end
     desc "All taks related to products"
@@ -68,5 +72,4 @@ task :E4Cinitialize do
 	    end
 	  end
 	end
-
 end

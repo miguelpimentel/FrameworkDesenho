@@ -8,5 +8,6 @@ gem 'dalli'
 gem "pagseguro-oficial"
 gem 'abstraction'
 gem "activerecord"
+gem 'rspec', '~> 3.6'
+gem 'simplecov', :require => false
 
-gem "brcobranca", :github => "kivanio/brcobranca"
