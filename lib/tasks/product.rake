@@ -1,6 +1,6 @@
 module Product
 
-	require "active_record"
+#require "active_record"
 
   def self.generate
 
@@ -25,7 +25,7 @@ namespace :product do
 
         #Check if first letter of first argument is uppercased
         if args.extras[0][0].upcase! || args.extras[1][0].upcase! then
-            abort("First letter of a class must be in uppercase\nUsage: rake product:generate_model[<Model>,<Heritance>,<arg2>,<arg ...>]")
+            abort("First letter of a class must be in uppercase\nUsage: rake product:generate_model[<Model>,<Heritance>,<arg2:type>,<arg3:type ...>]")
         end
 
         content = "class #{args.extras[0]} < #{args.extras[1]}" + new_line
@@ -69,6 +69,10 @@ task :E4Cinitialize do
 	      table.column :serial_number, :string
 	      table.column :unit_price, :float
 	      table.column :unit_price, :float
+ 	      args.extras.drop(2).each do |params|
+          str_tmp = "#{params}".split(":")
+   	      table.column (":" + str_tmp[0]).to_sym , (":" + str_tmp[1]).to_sym
+   	    end
 	    end
 	  end
 	end
